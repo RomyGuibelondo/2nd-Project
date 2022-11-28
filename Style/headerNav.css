@@ -1,0 +1,93 @@
+.header-nav{
+    padding: 0.5em 0;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid var(--border-color);
+}
+.trigger{
+    font-size: 1.5em;
+    display: flex;
+    padding: 0.25em;
+    margin-right: 0.5em;
+}
+.logo a {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.75em;
+    position: relative;
+    font-weight: var(--fw8);
+    display: flex;
+    padding-left: 0.75em;
+    margin-right: 2em;
+}
+.circle{
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: var(--percent50);
+    background-color: var(--light-bg-color);
+    z-index: -1;
+    
+}
+.circle::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--percent50);
+    background-color: var(--second-dark-color);
+    bottom: 5px;
+    opacity: .4;;
+}
+.header-nav nav > ul{
+    line-height: 100px;
+    gap: 2em;
+}
+.fly-item{
+    position: absolute;
+    height: px;
+    font-weight: var(--font-smaller);
+    padding: 3px;
+    text-align: center;
+    line-height: 10px;
+    color: var(--white-color);
+}
+nav .fly-item{
+    top: 50%;
+    margin-top: -24px;
+    width: 30px;
+    border-radius: 3px;
+    right: -32px;
+    background-color: var(--primary-color);
+    display: inline-table;
+}
+.header-nav .right{
+    position: relative;
+    margin-left: auto;
+}
+.header-nav .right .icon-large{
+    position: relative;
+}
+.header-nav .right .fly-item{
+    top: 0;
+    right: 16px;
+    font-size: 16px;
+    width: 16px;
+    background-color: var(--secondary-dark-color);
+    border-radius: var(--percent50);
+}
+.mega .flexcol{
+    flex: 1;
+    min-width: 188px;
+    padding-right: 2.5em;
+    margin-bottom: 1.5em;
+    z-index: 1;
+    border: red solid;
+}
+.object-cover img{
+    /* position: absolute; */
+    /* object-fit: cover; */
+    height: var(--percent100);
+    width: var(--percent100);
+    display: block;
+}
