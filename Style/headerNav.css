@@ -37,7 +37,7 @@
     border-radius: var(--percent50);
     background-color: var(--second-dark-color);
     bottom: 5px;
-    opacity: .4;;
+    opacity: 0.01;
 }
 .header-nav nav > ul{
     line-height: 100px;
@@ -83,11 +83,4 @@ nav .fly-item{
     margin-bottom: 1.5em;
     z-index: 1;
     border: red solid;
-}
-.object-cover img{
-    /* position: absolute; */
-    /* object-fit: cover; */
-    height: var(--percent100);
-    width: var(--percent100);
-    display: block;
 }
