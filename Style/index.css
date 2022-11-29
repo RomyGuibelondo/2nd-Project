@@ -2,6 +2,8 @@
 @import url(reusableSelector.css);
 @import url(header.css);
 @import url(responsive.css);
+@import url(headerMain.css);
+@import url(headerSearch.css);
 :root {
     --primary-color: #21A558;
     --second-color: #794afa;
@@ -36,6 +38,7 @@
     box-sizing: border-box;
 }
 *,::before,::after{
+    box-sizing: border-box;
 }
 body{
     font-family: 'Source Serif Pro', serif;

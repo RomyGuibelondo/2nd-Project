@@ -76,6 +76,11 @@
   transition: var(--trans-color);
 }
 
+.mini-text{
+    font-size: var(--font-smaller);
+    color: var(--light-text-color);
+}
+
 /* ------------------------------------------------------------------------------ */
 header li > a {
   display: flex;
