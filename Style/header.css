@@ -13,7 +13,7 @@
 }
 .icon-small{
     font-size: 1.25em;
-    margin: auto;
+    margin-left: auto;
 }
 .icon-large{
     font-size: 1.75em;
@@ -72,7 +72,10 @@
     gap: 1em;
     transition: var(--trans-color);
 }
-
+.mini-text{
+    font-size: var(--font-smaller);
+    color: var(--light-text-color);
+}
 
 
 
