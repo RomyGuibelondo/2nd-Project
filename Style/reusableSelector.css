@@ -1,41 +1,32 @@
 @import url(header.css);
 @import url(responsive.css);
-.container{
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 auto;
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 auto;
 }
-.column{
-    margin-left: -0.938em;
-    margin-right: -0.938em;
+.column {
+  margin-left: -0.938em;
+  margin-right: -0.938em;
 }
-.column .row{
-padding: 0 0.938em;
+.column .row {
+  padding: 0 0.938em;
 }
-.flexwrap{
-    display: flex;
-    flex-wrap: wrap;
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 .flexcenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .flexitem {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .flexcol {
-    display: flex;
-    flex-direction: column;
-    grid-area: 1em;
+  display: flex;
+  flex-direction: column;
+  grid-area: 1em;
 }
-
-
-
-
-
-
-
-
-
