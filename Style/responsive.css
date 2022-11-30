@@ -97,55 +97,79 @@
     max-width: 600px;
     margin-left: auto;
   }
-  /* Departments menu */
-
-  nav .mega .wrapper {
-    display: flex;
-  }
-  nav .mega h4 {
-    font-size: 0.8em;
-    text-transform: uppercase;
-  }
-  nav .mega ul {
-    font-size: var(--font-small);
-  }
-  nav .mega .women-brands {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 180px;
-  }
-  nav .mega .women-brands li {
-    min-width: 80px;
-  }
-  nav .mega .view-all {
-    margin-top: 1em;
-  }
-  nav .mega .products {
-    flex: 2;
-    padding: 0;
-    align-items: center;
-    position: relative;
-  }
-  nav .mega .products .row {
-    width: var(--percent100);
-  }
-  nav .mega .products .media {
-    height: 400px;
-  }
-  nav .mega .products .text-content {
-    line-height: initial;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: 0.5em;
+  /*------------ Departments menu-------------------- */
+  .dpt-menu{
     position: absolute;
-    bottom: 4em;
+    top: var(--percent100);
+    width: 300px;
+    background-color: var(--white-color);
+    border:1px solid var(--border-color);
+    border-top: 0;
+    border-bottom: 0;
+  }
+  .dpt-menu > ul > li > a{
+    font-weight: var(--fw6);
+    padding: 0 1.5em;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .dpt-menu .has-child > ul, .dpt-menu .mega{
+    position: absolute;
+    top: 0;
+    left: var(--percent100);
     width: var(--percent100);
+    height: auto;
+    min-height: var(--percent100);
+    padding: 1.5em;
+    font-size: var(--font-small);
+    font-weight: 550;
+    line-height: 2.5em;
+    border: 1px solid var(--border-color);
+    display: none;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
-  nav .mega .products .text-content h4 {
-    font-size: 2em;
-    font-weight: var(--fw8);
-    text-align: center;
-    color: var(--secondary-dark-color);
+  /* showing the first sub menu 870 */ 
+  .dpt-menu .mega{
+    display: none;
   }
+  .dpt-menu .beauty ul {
+    background-image: url(/assets/menu/menu_bg1.jpg); 
+    isolation: isolate;
+  }
+  .dpt-menu .beauty ul::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: rgba(241, 241, 157, 0.445);
+    opacity: .5;
+  }
+  .dpt-menu .electronic ul {
+    background-image: url(/assets/menu/menu_bg2.jpg);
+  }
+  .dpt-menu .fashion ul {
+    background-image: url(/assets/menu/menu_bg3.jpg);
+  }
+  /* -------880--------- */
+  .dpt-menu .homekit .mega {
+    background-image: url(/assets/menu/menu_bg4.jpg);
+  }
+  .dpt-menu .has-child > :where(ul,.mega)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0% black);
+  }
+  .dpt-menu .mega{
+    width: auto;
+    min-width: var(--percent100);
+  }
+  .dpt-menu .has-child:hover .mega{
+    display: flex;
+  }
+  
 }

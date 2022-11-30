@@ -4,6 +4,7 @@
 @import url(responsive.css);
 @import url(headerMain.css);
 @import url(headerSearch.css);
+@import url(headerResponsive.css);
 :root {
   --primary-color: #21a558;
   --second-color: #794afa;
