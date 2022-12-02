@@ -5,6 +5,8 @@
 @import url(/Style/HeaderStyle/headerMain.css);
 @import url(/Style/HeaderStyle/headerSearch.css);
 @import url(/Style/HeaderStyle/headerResponsive.css);
+@import url(/Style/MainStyle/MainSlider.css);
+@import url(/Style/MainStyle/brands.css);
 :root {
   --primary-color: #21a558;
   --second-color: #794afa;

@@ -141,9 +141,13 @@
     content: '';
     position: absolute;
     z-index: -1;
+    left: 0;
+    bottom: 30%;
+    width: 150px;
     inset: 0;
-    background-color: rgba(241, 241, 157, 0.445);
-    opacity: .5;
+    background-color: var(--white-color);
+    filter: blur(20px);
+    opacity: .9;
   }
   .dpt-menu .electronic ul {
     background-image: url(/assets/menu/menu_bg2.jpg);
@@ -171,5 +175,10 @@
   .dpt-menu .has-child:hover .mega{
     display: flex;
   }
+  /* slider */
+  .slider > div > .wrapper {
+    width: calc(100% - (300px + 2em));
+    margin-left: auto;
+}
   
 }
